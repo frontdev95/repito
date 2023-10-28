@@ -1,0 +1,9 @@
+header{
+  background-image: url('../assets/images/hero.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-links__item{
+  transition: all ease-in-out 1s;
+}

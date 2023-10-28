@@ -1,0 +1,139 @@
+:root{
+  --primary: #FF7757;
+  --secondary: #331811;
+}
+
+.container{
+  padding-inline: 1rem;
+ 
+}
+
+@media only screen and (min-width: 48rem) {
+  .container{
+    padding-inline: 1.25rem;
+  }
+}
+
+
+@media only screen and (min-width: 72rem) {
+  .container{
+    padding-inline: 2rem;
+  }
+}
+
+
+@media only screen and (min-width: 120rem) {
+  .container{
+    padding-inline: 13.75rem;
+  }
+}
+
+.header--theme{
+  color: white;
+  background-color: #227777;
+}
+
+header{
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  min-height: 100vh;
+  max-height: 150vh;
+}
+
+@media only screen and (min-width: 600px) {
+  header{
+    height: 100vh;
+  }
+}
+
+nav{
+  font-size: 1.25rem;
+  padding-block: 1rem;
+  position: absolute;
+  width: 100%;
+  transition: all ease-in-out .5s;
+}
+
+.nav--contrast{
+  background-color: inherit;
+  position: fixed;
+  transition: all ease-in-out .5s;
+  width: 100vw;
+}
+
+
+.nav-links__item--current-item{
+  text-decoration: underline;
+  text-decoration-color: var(--primary);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 0.2rem;
+  font-weight: 900;
+}
+
+.cta{
+  border-radius: 0.75rem;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+}
+
+.cta--primary{
+  background-color: var(--primary);
+}
+
+h1{
+  width: min(80%, 25ch);
+  margin-block-end: 1rem;
+}
+
+.header__title{
+  grid-row: 2/ span 1;
+}
+
+
+.header__book-data{
+  grid-row: 3/ span 1;
+  background-color: white;
+  border-radius: 1rem;
+  margin: 1rem;
+  color: black;
+}
+
+.header__book-data > button{
+  background-color: var(--primary);
+  width: 100%;
+  font-size: 2em;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: white;
+  padding-block: 3rem;
+  padding-inline: 1.25rem;
+  flex-grow: 1;
+}
+
+@media only screen and (min-width: 600px) {
+  .header__book-data > button{
+    max-width: 10ch;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 1rem;
+  }
+}
+
+.header__book-data input{
+  border-bottom: 1px solid black;
+  width: 100%;
+}
+
+.header__book-data > div{
+  padding-block: 2rem;
+  flex-grow: 3;
+}
+
+
+.header__book-data > div > div{
+  width: 100%;
+  gap: 2rem;
+}
+
+.header__book-data > div > div label{
+  width: 100%;
+}
