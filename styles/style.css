@@ -151,16 +151,6 @@ h1{
 }
 
 
-@media only screen and (min-width: 900px){
-  .nav--desktop{
-    display: flex;
-  }
-
-  .nav--mobile{
-    display: none;
-  }
-  
-}
 
 .nav--mobile .nav-links{
   position: absolute;
@@ -197,3 +187,15 @@ h1{
   grid-row: 1/ span 1;
   grid-column: 1/ span 1;
 } 
+
+
+@media only screen and (min-width: 900px){
+  .nav--desktop{
+    display: flex;
+  }
+
+  .nav--mobile{
+    display: none;
+  }
+  
+}
