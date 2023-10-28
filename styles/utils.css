@@ -64,3 +64,12 @@
     flex-direction: column;
   }
 }
+
+
+.hidden{
+  display: none;
+}
+
+.pbs-5{
+  padding-block-start: 5rem;
+}

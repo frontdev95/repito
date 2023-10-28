@@ -1,5 +1,6 @@
 :root{
   --primary: #FF7757;
+  --primary-subdue: #3ed2a3;
   --secondary: #331811;
 }
 
@@ -136,4 +137,61 @@ h1{
 
 .header__book-data > div > div label{
   width: 100%;
+}
+
+.nav--desktop{
+  display: none;
+}
+
+.nav--mobile{
+  display: block;
+}
+
+.nav--mobile input{
+  width: 0;
+}
+
+.nav--mobile input{
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  display: block;
+  transform: translate(0, -35px);
+}
+
+
+@media only screen and (min-width: 900px){
+  .nav--desktop{
+    display: flex;
+  }
+
+  .nav--mobile{
+    display: none;
+  }
+  
+}
+
+.nav--mobile .nav-links{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: var(--secondary);
+  width: 80vw;
+  height: 100vh;
+  transform: translateX(-80vw);
+  transition: transform ease-in-out 0.5s;
+}
+
+.nav--mobile input:checked ~ .nav-links{
+  display: flex;
+  animation: appear-in ease-in 0.5s forwards;
+  transition: all ease-in-out 0.5s;
+}
+
+
+@keyframes appear-in {
+  100%{
+    transform: translateX(0);
+  }
 }

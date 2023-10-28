@@ -13,8 +13,10 @@ const dataLinks = $$('[data-link]', nav).reduce((acm, element)=>({
 
 
 
-$(`[data-link="${dataLinks[pathname]}"`, nav)
-  ?.classList.add('nav-links__item--current-item')
+$$(`[data-link="${dataLinks[pathname]}"`, nav)
+  ?.forEach(element => element.classList.add('nav-links__item--current-item'))
+
+
 
 const contrastClassName = 'nav--contrast'
 
